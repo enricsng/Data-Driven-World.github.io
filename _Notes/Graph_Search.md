@@ -91,11 +91,11 @@ Steps:
 1. Initialize every vertex with the following:
   1.1 set color to white
   1.2 set distance to INF
-  1.3 set parent to NILL
+  1.3 set parent to NULL
 2. start from s vertex:
   2.1 set s' color to grey
   2.2 set s' distance to 0
-  2.3 set s' parent to NILL
+  2.3 set s' parent to NULL
 3. put s into the Queue
 4. As long as Queue is not empty
   4.1 take out one vertex from Queue and store to u
@@ -108,7 +108,7 @@ Steps:
   4.3 after finish exploring all neighbours, set u's color to black
 ```
 
-In the second algorithm, we have a new attribute called **parent**. In the beginning we set all vertices to have NILL as their parents. Since s is the starting vertex, it has no parent and so we set to NILL in step 2.3. We added step 4.2.1.3 where we set u as the parent to the neighbouring vertex when we add that neighbouring vertex into the Queue. 
+In the second algorithm, we have a new attribute called **parent**. In the beginning we set all vertices to have NULL as their parents. Since s is the starting vertex, it has no parent and so we set to NULL in step 2.3. We added step 4.2.1.3 where we set u as the parent to the neighbouring vertex when we add that neighbouring vertex into the Queue. 
 
 With this, we can write another algorithm to retrieve the path from s to some destination vertex v. 
 
@@ -123,14 +123,14 @@ Output:
 Steps:
 1. if v is the same as the start vertex
   1.1 return a list with one element, i.e. s
-2. otherwise, check if parent of v is NILL
+2. otherwise, check if parent of v is NULL
   2.1 return "No path from s to v exist"
 3. otherwise, 
   3.1 call find-path(G, s, parent of v)
   3.2 add v into the result from 3.1
 ```
 
-The above algorithm uses recursion. There are two base cases. The first base case is when the destination vertex to be the same as the starting vertex. In this case, the output is just that vertex. The second base case is when there is no path from s to v. We know there is no path when along the path starting from v we find a vertex which parent is NILL. The recursion case is described in step 3. In this case, we call the same function but with the destination vertex to be the parent of the current destination vertex. By moving the destination vertex to the parent, we reduce the problem and make it smaller until we reach base case described in step 1. 
+The above algorithm uses recursion. There are two base cases. The first base case is when the destination vertex to be the same as the starting vertex. In this case, the output is just that vertex. The second base case is when there is no path from s to v. We know there is no path when along the path starting from v we find a vertex which parent is NULL. The recursion case is described in step 3. In this case, we call the same function but with the destination vertex to be the parent of the current destination vertex. By moving the destination vertex to the parent, we reduce the problem and make it smaller until we reach base case described in step 1. 
 
 Let's see an example when we search a shortest path from A to F in the previous graph. In this case, v is not the same as s since A and F are two different vertices. So we look into F's parent, which is C. Now we call the same function to find the path from A to C. Since A and C are different, we look into C's parent, which is B and call the function to find the path from A to B. Finally, we look into B's parent and find the path from A to A. This is the base case. When we reach the base case, we return a list containing A as the result (step 1.1). Then we move back and do step 3.2 to add B, C, and finally F. So the shortest path from A to F will be a list `[A, B, C, F]`. 
 
@@ -227,7 +227,7 @@ Output:
 Steps:
 1. Initialize each vertex as follows:
   1.1 set colour to white
-  1.2 set parent to NILL
+  1.2 set parent to NULL
 2. set time to 0
 3. for each vertex in the graph G
   3.1 if the vertex's colour is white, do:
