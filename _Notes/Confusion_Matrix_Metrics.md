@@ -102,7 +102,7 @@ This is also often called as Recall. In this metric, we are interested to know t
 
 $$\text{sensitivity} = \frac{11}{11 + 3} = \frac{11}{14} = 0.786$$
 
-This means that the sensitivity is about 79\%. Notice that the sensitivy value is different from precision which is about 85\%. We can write the formula for sensitivity as follows.
+This means that the sensitivity is about 79\%. Notice that the sensitivity value is different from precision which is about 85\%. We can write the formula for sensitivity as follows.
 
 $$\text{sensitivity} = \frac{\text{TP}}{\text{Total Actual Positives}} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
 
