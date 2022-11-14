@@ -83,7 +83,7 @@ In precision, we put more attention into the positive cases. We are interested i
 
 $$\text{precision} = \frac{11}{11 + 2} = \frac{11}{13} = 0.846$$
 
-This means that we have a precision of about 85\%. Out of all the total 13 cases detected positive, 11 of them is correct. Obviously we want our precision to be as high as possible. We can write precision formula as follows.
+This means that we have a precision of about 85%. Out of all the total 13 cases detected positive, 11 of them is correct. Obviously we want our precision to be as high as possible. We can write precision formula as follows.
 
 $$\text{precision} = \frac{\text{TP}}{\text{Total Predicted Positives}} = \frac{\text{TP}}{\text{TP} + \text{FP}}$$
 
@@ -102,7 +102,7 @@ This is also often called as Recall. In this metric, we are interested to know t
 
 $$\text{sensitivity} = \frac{11}{11 + 3} = \frac{11}{14} = 0.786$$
 
-This means that the sensitivity is about 79\%. Notice that the sensitivity value is different from precision which is about 85\%. We can write the formula for sensitivity as follows.
+This means that the sensitivity is about 79%. Notice that the sensitivity value is different from precision which is about 85%. We can write the formula for sensitivity as follows.
 
 $$\text{sensitivity} = \frac{\text{TP}}{\text{Total Actual Positives}} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
 
@@ -145,7 +145,7 @@ The diagonal element again gives us the accuracy of the model.
 
 $$\text{accuracy} = \frac{11 + 9 + 8}{38} = \frac{28}{38} = 0.737$$
 
-which is about 73\%. We can write the formula for accuracy as follows.
+which is about 73%. We can write the formula for accuracy as follows.
 
 $$\text{accuracy} = \frac{\sum_i M_{ii}}{\sum_i\sum_j{M_{ij}}} $$
 
