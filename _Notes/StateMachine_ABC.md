@@ -28,7 +28,7 @@ Let's draw the UML diagram of the `StateMachine` class.
 
 <img src="/assets/images/week12/SM_class.png" alt="drawing" width="400"/>
 
-In this class diagram, we identify that `StateMachine` is an abstract class which requires another sub class to implement some of its definition. We also specifies using `<<abstract>>` notation that it is the `get_next_values(state, inp)` that the sub class has to define. Note also that the `start_state` must be initialized by the sub-class also since each state machine may have different initial state. 
+In this class diagram, we identify that `StateMachine` is an abstract class which requires another sub class to implement some of its definition. We also specified using `<<abstract>>` notation that it is the `get_next_values(state, inp)` that the sub class has to define. Note also that the `start_state` must be initialized by the sub-class also since each state machine may have different initial state. 
 
 Recall that `get_next_values(state, inp)` in the child class provides the implementation of both the output and the next state functions. These functions are needed by the `step(inp)` method which is inherited from `StateMachine` class to determine the output and change the current state to the next state. Let's see how we can implement this in Python.
 

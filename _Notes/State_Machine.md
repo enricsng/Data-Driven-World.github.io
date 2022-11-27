@@ -38,7 +38,7 @@ The above expression states that the current output is a function of the current
 
 ## Examples of Pure Functions
 
-Let's illustrate the above definition with some Python programs. We will start with a simple example of a function where the output is just the function of the current input. One example is a function to calculate the cartessian distance of a three dimensional coordinate. Given the three input of x, y, and z, the function returns an output of the distance from the origin.
+Let's illustrate the above definition with some Python programs. We will start with a simple example of a function where the output is just the function of the current input. One example is a function to calculate the cartesian distance of a three dimensional coordinate. Given the three input of x, y, and z, the function returns an output of the distance from the origin.
 
     
 
@@ -126,7 +126,7 @@ lb.transduce([0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1])
     off
 
 
-The test code in the above example call the transduce method with a list of integer values. The input is 1 when the button is pressed and 0 otherwise. We can see that when the button is pressed at time step 3, the output changes from "off" to "on". Notice that initially the output is "off". At time step 8, we have 4 presses of the input buttons and we can see the output is toggled four times. At the last time step, the button is pressed again and the light is switched from "on" to "off". We have implemented our first state machine.
+The test code in the above example calls the transduce method with a list of integer values. The input is 1 when the button is pressed and 0 otherwise. We can see that when the button is pressed at time step 3, the output changes from "off" to "on". Notice that initially the output is "off". At time step 8, we have 4 presses of the input buttons and we can see the output is toggled four times. At the last time step, the button is pressed again and the light is switched from "on" to "off". We have implemented our first state machine.
 
 In general, we can say that all objects in a computer program is a state machine where the values of the objects' attributes define the state of those objects. 
 

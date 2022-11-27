@@ -15,7 +15,7 @@ show_date: false
 
 ## Introduction
 
-Linear regression is a machine learning algorithm dealing with a continuous data and is considered a supervised machine learning algorithm. Linear regression is a useful tool for predicting a quantitative response. Though it may look just like another statistical methods, linear reguression is a good jumping point for newer approaches in machine learning. 
+Linear regression is a machine learning algorithm dealing with a continuous data and is considered a supervised machine learning algorithm. Linear regression is a useful tool for predicting a quantitative response. Though it may look just like another statistical method, linear regression is a good jumping off point for newer approaches in machine learning. 
 
 
 In linear regression we are interested if we can model the relationship between two variables. For example, in a HDB Resale Price dataset, we may be interested to ask if we can predict the resale price if we know the floor size. In the simplest case, we have an independent variable $x$ and a dependent variable $y$ in our data collection. The linear regression algorithm will try to model the relationship between these two variables as a straight line equation.

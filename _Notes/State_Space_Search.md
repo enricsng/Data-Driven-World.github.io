@@ -51,7 +51,7 @@ We can also write it as a lambda function in Python as follows.
 lambda state: state == 'G'
 ```
 
-The legal actions in this domain can be integers values like $0, 1, \ldots, n-1$, where $n$ is the maximum number of successors in any of the states. The maximum number of successors simply means the maximum number of degrees in the graph. We can find this number by looking at the node (or state) that has the largest number of edges. In this case, state 'D' has the largest number of edges, i.e. 4. So the legal actions are integer values: 0, 1, 2, 3. We can assign, for example, the following transitions:
+The legal actions in this domain can be integer values like $0, 1, \ldots, n-1$, where $n$ is the maximum number of successors in any of the states. The maximum number of successors simply means the maximum number of degrees in the graph. We can find this number by looking at the node (or state) that has the largest number of edges. In this case, state 'D' has the largest number of edges, i.e. 4. So the legal actions are integer values: 0, 1, 2, 3. We can assign, for example, the following transitions:
 - input 0: transition from D to A
 - input 1: transition from D to B
 - input 2: transition from D to F
